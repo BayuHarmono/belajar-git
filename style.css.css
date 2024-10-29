@@ -1,0 +1,474 @@
+* {
+    font-family: "Montserrat";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 47px;
+    margin: 0 0 16px 0;
+}
+
+.h {
+    width: 100%;
+    height: 2px;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: purple;
+    position: sticky;
+    top: 150px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    font-size: 24px;
+}
+
+.btn2 {
+    background-color: purple;
+    color: white;
+    padding: 8px;
+}
+
+.btn1 {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    margin-right: 16px;
+    border: 2px solid purple;
+
+}
+
+p {
+    color: black;
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
+#landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+    padding-bottom: 150px;
+}
+
+
+nav > a {
+    color: black;
+    margin-left: 12px;
+}
+
+nav > a:hover {
+    color: purple;
+}
+
+.navbar {
+
+    width: 300px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.nb {
+    justify-content: flex-end;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 128px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    margin-bottom: 0px;
+    z-index: 20;
+}
+
+#header h1 {
+    margin: 0;
+    animation: bounceIn 1s;
+}
+
+#header img {
+    width: 150px;
+    height: 150px;
+}
+
+
+@keyframes bounceIn {
+    0% {
+        filter: opacity(0);
+        transform: translateY(-20px);
+    }
+    35% {
+        filter: opacity(0.25);
+        transform: translateY(0px);
+    }
+    70% {
+        filter: opacity(0.5);
+        transform: translateY(-10px);
+    }
+    100% {
+        filter: opacity(1);
+        transform: translateY(0px);
+    }
+}
+
+section {
+    padding: 16px 128px;
+}
+
+#landing p {
+    padding-bottom: 0px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+    padding-bottom: 150px;
+}
+
+#about > div {
+    width: 50%;
+}
+
+#landing > div {
+    width: 50%;
+}
+
+#about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 72px;
+}
+
+#about-stats > div > div {
+    width: 80px;
+    height: 10px;
+    background-color: purple;
+    margin-bottom: 12px;
+}
+
+.about-stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-header h1::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url("../images/5.png");
+    position: absolute;
+    
+
+}
+
+.service-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 128px;
+    margin-top: 72px;
+    align-items: center;
+}
+
+.paket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    box-shadow: 2px 4px 4px #979797;
+}
+
+.paket:hover {
+    transform: scale(1.1);
+}
+
+.servis:hover {
+    transform: scale(1.1);
+}
+
+.paket1 p {
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.paket1 {
+    display: grid;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.servis p {
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.servis h2 {
+    padding: 0 16px;
+}
+
+.servis {
+    box-shadow: 2px 4px 4px #979797;
+
+}
+
+#service {
+    padding-bottom: 150px;
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    column-gap: 128px;
+}
+
+.contact-detail > div, .contact-detail > form {
+    width: 80%;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    grid-template-areas: "Nama Kendala"
+                            "Email NomorTelepon"
+                                "Pesan Pesan";
+}
+
+#input-Nama {
+    grid-area: Nama;
+}
+
+#input-Kendala {
+    grid-area: Kendala;
+}
+#input-Email {
+    grid-area: Email;
+}
+#input-NomorTelepon {
+    grid-area: NomorTelepon;
+}
+#input-Pesan {
+    grid-area: Pesan;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid purple;
+    font-size: 20px;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid purple;
+}
+
+.input-group label {
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+form button {
+    border: none;
+}
+
+form button:hover  {
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid purple;
+    padding: 64px 24px;
+}
+
+form h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+footer {
+    padding: 16px 128px;
+    background-color: purple;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    width: 50%;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#contact {
+    padding-bottom: 200px;
+}
+
+img, iframe {
+    width: 100%;
+}
+
+
+/* Tampilan HP */
+
+@media screen and (max-width: 720px) {
+    #header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 0px;
+    }
+
+    .nb {
+        padding: 15px 0px;
+    }
+    
+    #footer {
+        padding: 16px 32px;
+    }
+
+    section {
+        padding: 34px 12px;
+    }
+
+    #landing {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    #landing > div {
+        width: 100%;
+    }
+    
+    #landing > div > h1 {
+
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about > div {
+        width: 100%;
+    }
+
+    .service-header {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center
+    }
+
+    .service-detail {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+        display: flex;
+    }
+
+    #service > div {
+        width: 100%;
+    }
+
+    .paket {
+        flex-direction: column;
+
+    }
+
+    .contact-detail {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 64px;
+    }
+
+    #contact > h1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .frame {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-detail form, .contact-detail > div {
+        width: 100%;
+    }
+
+}
+
+/* Tampilan Tablet */
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+}
+
+
+/* Tampilan PC */
+
+
+
+@media screen and (min-width: 1200px) {
+
+}
+
